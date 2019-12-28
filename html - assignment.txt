@@ -1,0 +1,49 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+    <form>
+<table border="1">
+    <tr>
+        <th>Athlete Name </th>
+        <th><input type="text" id="tname"></th></tr>
+    
+    <tr>
+        <th>Gender</th> 
+        <th><input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female</th>
+</tr>
+<tr>
+    <th>Category</th>
+    <th> <select>
+            <option>Running</option>
+            <option>High Jump</option>
+            <option>Hurdles</option>
+            <option>Relay</option>
+            <option>Javelin Throw</option>
+            <option>Shotput</option>
+        </select>
+    </th>
+</tr>
+<tr>
+    <th>Email </th>
+        <th><input type="email" id="temail"required ><br>
+    </th>
+</tr>
+<tr>
+    <th>Mobile</th> 
+    <th><input type="number" required placeholder="Enter only 10 digits"><br>
+    </th>
+</tr>
+<tr>
+    <th>
+        <input type ="submit" value="ADD">
+        <input type ="reset" value = "CANCEL"> </th>
+        <th><a href = "http://www.assignment1.html" >HOME</a>
+    </th>
+</tr>
+</table>
+</form>
+</body>
+</html>

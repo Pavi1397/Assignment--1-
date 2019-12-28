@@ -1,0 +1,23 @@
+package com.deloitte;
+import java.util.Scanner;
+
+public class SumOfOdd {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		if (num<100) {
+			System.out.println("Enter a valid 3 digit number");
+		}
+		else{
+		int sumof = 0;
+		while(num!=0) {
+			int t = num%10;
+			if (t%2!=0) {
+				sumof+=t;
+			}
+		num= num/10;
+		}
+		}
+		System.out.println(sumof);
+	}
+}

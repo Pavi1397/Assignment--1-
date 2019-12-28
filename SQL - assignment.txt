@@ -1,0 +1,46 @@
+
+
+
+SQL> select * from emp where hiredate like '__-FEB-81' AND comm>400;
+
+     EMPNO ENAME                                              JOB                                        HIREDATE
+  MGR        SAL       COMM     DEPTNO
+---------- -------------------------------------------------- -------------------------------------------------- --------- ---------- ---------- ---------- ----------
+      7521 ward                                               salesman                                   22-FEB-81
+ 7698       1250        500         30
+
+SQL> select * from emp where comm IS NULL OR comm=0;
+
+     EMPNO ENAME                                              JOB                                        HIREDATE
+  MGR        SAL       COMM     DEPTNO
+---------- -------------------------------------------------- -------------------------------------------------- --------- ---------- ---------- ---------- ----------
+      7369 smith                                              clerk                                      17-DEC-80
+ 7902        800                    20
+      7566 jones                                              manager                                    02-APR-81
+ 7839       2975                    20
+      7698 blake                                              manager                                    01-MAY-81
+ 7839       2850                    30
+      7782 clark                                              manager                                    09-JUN-81
+ 7839       2450                    10
+      7788 scott                                              analyst                                    19-APR-87
+ 7566       3000                    20
+      7839 king                                               president                                  17-NOV-81
+            5000                    10
+      7844 turner                                             salesman                                   08-SEP-81
+ 7698       1500          0         30
+      7876 adams                                              clerk                                      23-MAY-87
+ 7788       1100                    20
+      7900 james                                              clerk                                      03-DEC-81
+ 7698        950                    30
+      7902 ford                                               analyst                                    03-DEC-81
+ 7566       3000                    20
+      7934 miller                                             clerk                                      23-JAN-82
+ 7782       1300                    10
+
+11 rows selected.
+
+SQL> select count(*) from emp where comm IS NULL OR comm=0;
+
+  COUNT(*)
+----------
+        11
